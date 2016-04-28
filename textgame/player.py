@@ -2,6 +2,7 @@ import items
 import world
 import random
  
+
 class Player():
     def __init__(self):
         self.inventory = [items.Gold(15), items.Rock()]
@@ -27,17 +28,14 @@ class Player():
         r = random.randint(0, len(available_moves) - 1)
         self.do_action(available_moves[r])
 
-
     def move(self, dx, dy):
         self.location_x += dx
         self.location_y += dy
         print(world.tile_exists(self.location_x, self.location_y).intro_text())
      
-
     def move_north(self):
         self.move(dx=0, dy=-1)
      
-
     def move_south(self):
         s
         elf.move(dx=0, dy=1)
@@ -45,10 +43,8 @@ class Player():
     def move_east(self):
         self.move(dx=1, dy=0)
      
-
     def move_west(self):
         self.move(dx=-1, dy=0)
-
 
     def attack(self, enemy):
         best_weapon = None

@@ -23,5 +23,6 @@ def play():
                     player.do_action(action, **action.kwargs)
                     break
 
+
 if __name__ == "__main__":
     play()
