@@ -25,6 +25,7 @@ def book_to_sentences(filename):
 
     return sentences
 
+
 def train_and_most_similar(filenames, word):
 
     for filename in filenames:
